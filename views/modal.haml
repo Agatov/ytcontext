@@ -1,0 +1,35 @@
+.modal-overlay
+.modal-dialog
+  .modal-header
+    Оставьте ваши контактные данные
+    .small
+      Наш менеджер свяжется с вами в ближайшие 15 минут и уточнит все детали заказа
+  .body
+    %form{action: '#'}
+      %input{type: :text, name: :username, placeholder: 'Ваше имя'}
+      %input{type: :text, name: :phone, placeholder: 'Ваш телефон ( +7 903 777 77 77 )'}
+      %button.send-order{goal: 'CALL'}
+        Отправить
+
+.modal-thank-you
+  .modal-header
+    Спасибо!
+  .body
+    Мы свяжемся с вами уже очень скоро.
+
+
+    %button#hide-thank-you
+      Я буду ждать!
+
+
+.modal-subscribe
+  .header
+    Оставьте свои имя и емэйл в форме справа и получите уникальный видеокурс
+    %br
+    "Как использовать GoPro на все 100"
+  .inner
+    .form
+      %input{type: :text, name: :username, placeholder: 'Ваше имя'}
+      %input{type: :text, name: :phone, placeholder: 'Ваш email'}
+      %button.send-order.wide{goal: 'CALL'}
+        Получить видеокурс

@@ -1,0 +1,11 @@
+%html
+  %head
+    = css :application
+    = js :application
+    %script{src:'http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU'}
+    %title
+      Продажа камер GoPro
+  %body
+    = yield
+    = haml :modal
+    = erb :metrika
